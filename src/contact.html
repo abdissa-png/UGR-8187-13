@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        button {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: 100px;
+            border-radius: 10%;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        
+        a {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: 100px;
+            border-radius: 3ch;
+            display: inline-grid;
+            align-content: center;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        input,
+        textarea {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+        }
+        
+        input {
+            display: inline-block;
+            width: 300px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section style="display:grid;grid-template-columns: 1fr 2fr 1fr; justify-content: center; align-items: center;">
+            <img height="150px" src="images/logo.jpg" alt="Website-logo">
+            <h1 style="text-align:center">Visit Ethiopia</h1>
+            <nav style="display:grid;grid-template-columns: 1fr 1fr; justify-content: center;">
+                <a target="_blank" href="homepage.html">Home</a>
+                <a target="_blank" href="about.html">About</a>
+            </nav>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <img style="display:block; margin-right:auto;margin-left:auto" height="300px" src="images/contact-us.png" alt="Image for contact us" />
+        <section style="display:flex;flex-direction: column;margin-left: auto;margin-right: auto;align-items: center;padding:50px">
+            <section>
+                <h1 style="display:inline-block; text-align:center;border:black solid 2px;">GET IN TOUCH</h1>
+                <p>Phone: <span>+251---------</span></p>
+                <p>Email: <span>*****@sth.com</span></p>
+                <p>Address: <span></span></p>
+                <hr>
+            </section>
+            <form>
+                <section style="display:flex; flex-direction: row; flex-wrap: nowrap;">
+                    <div style="margin-right:10px">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required><br>
+                        <label for="phonenum">Phone Number:</label>
+                        <input type="text" name="phonenum" id="phonenum" placeholder="Phone Number" required><br>
+                    </div>
+                    <div>
+                        <label for="comment">Comment: </label>
+                        <textarea name="comment" id="comment" rows="10" cols="50" placeholder="Enter Your Comment" required></textarea><br>
+                    </div>
+                </section>
+                <input style="display:inherit; justify-items: center; margin-left: auto;margin-right: auto;" id="submit" value="Send Message" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p style="text-align:center">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

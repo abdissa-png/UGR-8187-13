@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <style>
+        button {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: auto;
+            border-radius: 3ch;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        a.navLinks {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: 100px;
+            border-radius: 3ch;
+            display: inline-grid;
+            align-content: center;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        li,
+        ul {
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        
+        li.container {
+            font-size: large;
+            font-weight: bolder;
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 280px;
+            margin: 10px;
+        }
+        
+        h1,
+        h2 {
+            font-size: xx-large;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section style="display:grid;grid-template-columns: 1fr 1fr; justify-content: center; align-items: center;">
+            <img height="150px" src="images/logo.jpg" alt="Website-logo">
+            <h1>Visit Ethiopia</h1>
+        </section>
+        <nav style="display:grid;grid-template-columns:1fr 1fr">
+            <div style="display:flex;flex-direction: row;">
+                <a class="navLinks" target="_blank" href="tours.html">Tours</a>
+                <a class="navLinks" target="_blank" href="festivals.html">Festivals</a>
+                <a class="navLinks" target="_blank" href="Booking.html">Bookings</a>
+            </div>
+            <div style="display:flex;flex-direction:row-reverse;">
+                <a class="navLinks" target="_blank" href="about.html">About</a>
+                <a class="navLinks" target="_blank" href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main style="display:grid;grid-template-columns:1fr 5fr">
+
+        <nav style="border: 2px solid black;">
+            <ul>
+                <li><a href="#cultureHeader">Culture</a></li>
+                <li><a href="#thingsToDoHeader">Discover Things To Do</a></li>
+                <li><a href="#attractionsHeader">Attractions</a><br>
+                    <ul>
+                        <li><a href="#eventsHeader">Events</a></li>
+                        <li><a href="#floraAndFaunaHeader">Fauna and Flora</a></li>
+                        <li><a href="#heritageHeader">World Heritage Sites</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <section style="border: 2px solid black;">
+                <h1 id="cultureHeader">Culture</h1>
+                <ul>
+                    <li class="container">
+                        <h2>History</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse
+                            potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu. Suspendisse est justo, bibendum a aliquam ultricies, mollis et nibh. Suspendisse sit amet mauris ultrices,
+                            congue erat tempus, malesuada augue. Pellentesque id ullamcorper nunc, id aliquet odio. Cras porta felis sed turpis venenatis bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                            Fusce nibh ante, aliquam quis nunc ac, convallis pellentesque eros. Integer a euismod nibh. Integer iaculis erat odio, non ornare tortor ultricies ut. Curabitur iaculis feugiat pharetra. Donec bibendum euismod dui in maximus.
+                        </p>
+                    </li>
+                    <li class="container">
+                        <h2>Arts and Music</h2>
+                        <section id="artAndMusic" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="artAndMusicLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="artAndMusicImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="artAndMusicRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="container">
+                        <h2>Peoples</h2>
+                        <section id="peoples" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="peoplesLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="peoplesImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="peoplesRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <section style="border: 2px solid black;">
+                <h1 id="thingsToDoHeader">Things To Do</h1>
+                <ul>
+                    <li class="container">
+                        <h2>Cultural Experiences</h2>
+                        <section id="culture" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="cultureLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="cultureImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="cultureRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="container">
+                        <h2>Nature Experiences</h2>
+                        <section id="nature" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="natureLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="natureImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="natureRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="container">
+                        <h2>Outdoor and Adventure</h2>
+                        <section id="outdoor" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="outdoorLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="outdoorImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="outdoorRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <section style="border: 2px solid black;">
+                <h1 id="attractionsHeader">Attractions</h1>
+                <ul>
+                    <li class="container">
+                        <h2 id="eventsHeader">Events</h2>
+                        <section id="events" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="eventsLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="eventsImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="eventsRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="container">
+                        <h2 id="floraAndFaunaHeader">Flora and Fauna</h2>
+                        <section id="floraAndFauna" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="floraAndFaunaLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="floraAndFaunaImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="floraAndFaunaRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="container">
+                        <h2 id="heritageHeader">World Heritage Sites</h2>
+                        <section id="heritage" style="display:grid;grid-template-columns: 1fr 5fr 1fr;">
+                            <button id="heritageLeftButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+                            <figure id="heritageImageContainer" style="display:grid;grid-template-columns:1fr 1fr 1fr;align-items: center;">
+                            </figure>
+                            <button id="heritageRightButton" style="height:140px;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <hr>
+        <p style="text-align:center">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="script/discover.js"></script>
+
+</html>

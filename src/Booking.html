@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        button {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: auto;
+            border-radius: 3ch;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        a {
+            background-color: #2cbfd3;
+            padding: auto;
+            height: 50px;
+            width: 100px;
+            border-radius: 3ch;
+            display: inline-grid;
+            align-content: center;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        input,
+        select {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            display: inline-block;
+            width: 300px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        
+        th,
+        td,
+        tr {
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        table {
+            margin: 10px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section style="display:grid; grid-template-columns: 1fr 1fr; justify-content: center; align-items: center;">
+            <img height="150px" src="images/logo.jpg" alt="Website-logo">
+            <h1>Visit Ethiopia</h1>
+        </section>
+        <nav style="display:grid;grid-template-columns:1fr 1fr">
+            <div style="display:flex;flex-direction: row;">
+                <a target="_blank" href="tours.html">Tours</a>
+                <a target="_blank" href="festivals.html">Festivals</a>
+                <a target="_blank" href="discover.html">Discover</a>
+            </div>
+            <div style="display:flex;flex-direction:row-reverse;">
+                <a target="_blank" href="about.html">About</a>
+                <a target="_blank" href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <nav style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;justify-items: center;border:2px solid black;border-radius: 3ch;">
+            <button id="popular">Popular Destinations</button>
+            <button id="best">Best Deals</button>
+            <button id="discounted">Discounted Tours</button>
+            <button id="new">New Destinations</button>
+        </nav>
+        <h1 style="text-align:center;border:1px solid black">Explore Destinations</h1>
+        <section style="height:450px;display:grid;grid-template-columns: 1fr 6fr 1fr;">
+            <button id="leftButton" style="height:auto;width:auto;background-color:aliceblue"><img src="images/left.png" alt="left arrow"></button>
+            <figure id="objectContainer" style="display:grid;grid-template-columns: 1fr;">
+                <figure id="imageContainer" style="display:inline-grid;justify-items:center;align-items:center">
+                    <img id="imageObject" style="height:-webkit-fill-available">
+                </figure>
+                <section style="display:grid;grid-template-columns:1fr 1fr">
+                    <table>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Tour Guide
+                        </th>
+                        <th>
+                            Cost
+                        </th>
+                        <tr>
+                            <td id="location">
+
+                            </td>
+                            <td id="date">
+
+                            </td>
+                            <td id="tourGuide">
+
+                            </td>
+                            <td id="cost">
+
+                            </td>
+                        </tr>
+                    </table>
+                    <section>
+                        <h1 id="header">
+
+                        </h1>
+                        <p id="description">
+
+                        </p>
+                    </section>
+                </section>
+            </figure>
+            <button id="rightButton" style="height:auto;width:auto;background-color:aliceblue"><img src="images/right.png" alt="right arrow"></button>
+        </section>
+        <hr>
+        <section style="margin:50px;border:4px solid black;border-radius: 10ch;padding:30px;">
+            <h1 style=" display:inline;border:2px solid black ">Book A Tour</h1>
+            <form style="margin:30px">
+                <div style="display:grid;grid-template-columns:1fr 1fr;padding:20px;border:3px solid black;border-radius: 3ch;">
+                    <section>
+                        <label for="firstname">First Name:</label>
+                        <input id="firstname" name="firstname" type="text" placeholder="Enter First Name" required><br>
+                        <label for="lastname">Last Name:</label>
+                        <input id="lastname" name="lastname" type="text" placeholder="Enter Last Name" required><br>
+                        <label for="Email">Email:</label>
+                        <input id="Email" name="Email" type="text" placeholder="Enter Your Email" required><br>
+                        <label for="tour">Tour:</label>
+                        <select id="tour" name="tour" placeholder="Choose The Tour" required>
+                        <option value="tour-1">tour-1</option>
+                        <option value="tour-2">tour-2</option>
+                        <option value="tour-3">tour-3</option>
+                    </select><br>
+                        <label for="inputDate">Choose Date:</label>
+                        <input id="inputDate" name="inputDate" type="date" required><br>
+                        <label for="package">Tour:</label>
+                        <select id="package" name="package" placeholder="Choose The Package" required>
+                        <option value="package-1">package-1</option>
+                        <option value="package-2">package-2</option>
+                        <option value="package-3">package-3</option>
+                    </select><br>
+                    </section>
+                    <section style="border:3px solid black;border-radius: 6ch;padding:10px">
+                        <h2 style="text-align:center">Credit Card Information</h2>
+                        <label for="creditnum">Credit Card Number:</label>
+                        <input id="creditnum" name="creditnum" placeholder="Card Number" required><br>
+                        <label for="expirydate">Expiry Date:</label>
+                        <input id="expirydate" name="expirydate" placeholder="MM/YY" required><br>
+                        <label for="cvc">CVC:</label>
+                        <input id="cvc" name="cvc" placeholder="CVC" required>
+                    </section>
+                </div>
+                <input style="display:inherit; justify-items: center; margin-left: auto;margin-right: auto;margin-top: 15px;" id="submit" value="Book Now" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p style="text-align:center">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="script/booking.js"></script>
+
+</html>
