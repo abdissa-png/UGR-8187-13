@@ -80,10 +80,6 @@ eventsPost = [{
     link: "https://www.expogr.com/ethiopia/buildexpo/",
 }];
 container = document.getElementById("container");
-container.style.display = "inline-grid";
-container.style.marginLeft = "500px";
-container.style.width = "800px";
-container.style.justifyItems = "center";
 document.getElementById("cultural").onclick = () => loadContainer(culturalpost);
 document.getElementById("religious").onclick = () => loadContainer(religiousPost);
 document.getElementById("national").onclick = () => loadContainer(nationalFestivalPost);
@@ -94,25 +90,19 @@ function loadContainer(post) {
     for (let i = 0; i < Math.ceil(post.length / 2); i++) {
         container.innerHTML = "";
         division = document.createElement("figure");
-        division.style.display = "grid";
-        division.style.margin = "30px";
-        division.style.gridTemplateColumns = "1fr 1fr"
+        division.className = "figureContainer"
         image = document.createElement("img");
         image.src = "images/festivals/" + post[i].image;
         image.alt = post[i].alt;
         miniDivision = document.createElement("section");
-        miniDivision.style.display = "inline-grid";
-        miniDivision.style.justifyItems = "center";
+        miniDivision.className = "textSection";
         header = document.createElement("h1");
         header.innerHTML = post[i].header;
         article = document.createElement("p");
         link = document.createElement("a");
+        link.className = "figureContainerLink"
         link.target = "_blank";
         link.href = post[i].link;
-        link.style.border = "1px solid black";
-        link.style.borderRadius = "1ch";
-        link.style.color = "black";
-        link.style.width = "auto";
         link.innerHTML = "Read More....";
         article.innerHTML = post[i].article;
         article.appendChild(link);
@@ -132,31 +122,25 @@ function loadContainer(post) {
         container.innerHTML = "";
         post.forEach(object => {
             division = document.createElement("figure");
-            division.style.display = "grid";
-            division.style.margin = "30px";
-            division.style.gridTemplateColumns = "1fr 1fr"
-            images = document.createElement("img");
-            images.src = "images/festivals/" + object.image;
-            images.alt = object.alt;
+            division.className = "figureContainer"
+            image = document.createElement("img");
+            image.src = "images/festivals/" + object.image;
+            image.alt = object.alt;
             miniDivision = document.createElement("section");
-            miniDivision.style.display = "inline-grid";
-            miniDivision.style.justifyItems = "center";
+            miniDivision.className = "textSection";
             header = document.createElement("h1");
             header.innerHTML = object.header;
             article = document.createElement("p");
             link = document.createElement("a");
+            link.className = "figureContainerLink"
             link.target = "_blank";
             link.href = object.link;
-            link.style.border = "1px solid black";
-            link.style.borderRadius = "1ch";
-            link.style.color = "black";
-            link.style.width = "auto";
             link.innerHTML = "Read More....";
             article.innerHTML = object.article;
             article.appendChild(link);
             miniDivision.appendChild(header);
             miniDivision.appendChild(article);
-            division.appendChild(images);
+            division.appendChild(image);
             division.appendChild(miniDivision);
             container.appendChild(division);
             breakLine = document.createElement("hr");
@@ -168,6 +152,7 @@ function loadContainer(post) {
 loadContainer(religiousPost);
 let slideIndex1 = 0;
 let slideIndex2 = 0;
+let numOfObjects = 3;
 image = document.getElementById("imageObject1");
 image.src = "images/festivals/" + Images[0].image;
 image.alt = Images[0].alt;
@@ -191,30 +176,19 @@ document.getElementById("rightButton1").onclick = function() {
 }
 
 function loadImages(index) {
-    console.log(index);
     document.getElementById("imageContainer2").innerHTML = "";
-    if (index + 3 < Images.length) {
-        for (let i = index; i < index + 3; i++) {
-            imageObj = document.createElement("img");
-            imageObj.src = "images/festivals/" + Images[i].image;
-            imageObj.alt = Images[i].alt;
-            imageObj.style.margin = "5px";
-            document.getElementById("imageContainer2").appendChild(imageObj);
-        }
-    } else {
-        for (let i = index; i < Images.length; i++) {
-            imageObj = document.createElement("img");
-            imageObj.src = "images/festivals/" + Images[i].image;
-            imageObj.alt = Images[i].alt;
-            imageObj.style.margin = "5px";
-            document.getElementById("imageContainer2").appendChild(imageObj);
-        }
+    for (let i = index; i < index + numOfObjects; i++) {
+        imageObj = document.createElement("img");
+        imageObj.className = "container2Images";
+        imageObj.src = "images/festivals/" + Images[i % Images.length].image;
+        imageObj.alt = Images[i % Images.length].alt;
+        document.getElementById("imageContainer2").appendChild(imageObj);
     }
-
 }
+
 document.getElementById("leftButton2").onclick = () => {
-    if (slideIndex2 - 3 >= 0) {
-        slideIndex2 -= 3;
+    if (slideIndex2 - 1 >= 0) {
+        slideIndex2 -= 1;
         loadImages(slideIndex2);
     } else {
         slideIndex2 = Images.length - 2;
@@ -222,12 +196,39 @@ document.getElementById("leftButton2").onclick = () => {
     }
 }
 document.getElementById("rightButton2").onclick = () => {
-    if (slideIndex2 + 3 < Images.length - 1) {
-        slideIndex2 += 3
+    if (slideIndex2 + 1 < Images.length - 1) {
+        slideIndex2 += 1
         loadImages(slideIndex2);
     } else {
         slideIndex2 = 0;
         loadImages(slideIndex2);
     }
 }
+document.getElementById("dropdown-button").onclick = () => {
+    dropdown = document.getElementById("dropdown");
+    console.log("clicked", dropdown.style)
+    if (dropdown.style.display == "") {
+        dropdown.style.display = "inline-grid";
+    } else {
+        dropdown.style.display = "";
+    }
+}
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 630) {
+        numOfObjects = 3;
+        loadImages(slideIndex2);
+    } else {
+        numOfObjects = 1;
+        loadImages(slideIndex2);
+    }
+})
+window.addEventListener("load", () => {
+    if (window.innerWidth > 850) {
+        numOfObjects = 3;
+        loadImages(0);
+    } else {
+        numOfObjects = 1;
+        loadImages(0);
+    }
+})
 loadImages(0);

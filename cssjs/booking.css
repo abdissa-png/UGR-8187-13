@@ -1,0 +1,288 @@
+button {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: auto;
+    border-radius: 3ch;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+a {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 3ch;
+    display: inline-grid;
+    align-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+input,
+select {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+th,
+td,
+tr {
+    /*text-align: center;*/
+    border: 1px solid black;
+}
+
+table {
+    margin: 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    opacity: 1;
+    background-color: white;
+}
+
+header>section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header>section>img {
+    height: 150px;
+}
+
+header>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#dropdown-button {
+    display: none;
+}
+
+#dropdown-button>img {
+    display: inherit;
+    height: 30px;
+}
+
+#dropdown {
+    display: none;
+    position: relative;
+    background-color: #083136;
+    top: 2vw;
+    width: 100%;
+    place-content: center;
+}
+
+#navContainer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#navContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main {
+    margin-top: 250px;
+}
+
+main>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 3ch;
+}
+
+main>h1 {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#slidingObjects {
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+#leftButton,
+#rightButton {
+    padding: 10px;
+    height: 10vw;
+    width: 8vw;
+    align-self: center;
+    background-color: aliceblue
+}
+
+.buttonImage {
+    width: 3vw;
+}
+
+#objectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#imageContainer {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center
+}
+
+#imageObject {
+    width: 36vw;
+    height: 18vw;
+}
+
+#objectContainer>section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#formContainer {
+    margin: 50px;
+    border: 4px solid black;
+    border-radius: 10ch;
+    padding: 30px;
+}
+
+#formContainer>h1 {
+    display: inline;
+    border: 2px solid black;
+}
+
+#formContainer>form {
+    margin: 30px;
+}
+
+#formContainer>form>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 3ch;
+}
+
+#creditCardForm {
+    border: 3px solid black;
+    border-radius: 6ch;
+    padding: 10px
+}
+
+#creditCardForm>h2 {
+    text-align: center;
+}
+
+#formContainer>form>input {
+    display: inherit;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+footer>p {
+    text-align: center;
+}
+
+@media screen and (max-width:530px) {
+    main>nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #navContainer1 {
+        display: none
+    }
+    #dropdown-button {
+        display: inline;
+        width: 60px;
+        padding-left: 15px;
+        margin: 0;
+        margin-top: 10px;
+        padding: auto;
+    }
+    header>section>img {
+        height: 25vw;
+    }
+    main {
+        margin-top: 55vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #leftButton,
+    #rightButton {
+        margin: 0;
+        padding: 2vw;
+    }
+    table {
+        margin: 2px;
+        font-size: 12px;
+    }
+    #objectContainer {
+        margin: 1vw;
+    }
+    #objectContainer>section {
+        grid-template-columns: 1fr;
+    }
+    #imageObject {
+        width: 50vw;
+        height: 30vw;
+    }
+    #formContainer>form {
+        margin: 12px;
+    }
+    #formContainer {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    #formContainer>form>div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:550px) {
+    input,
+    select {
+        width: 45vw;
+        font-size: 16px;
+    }
+    #formContainer>form>div {
+        border: none;
+        padding: 10px
+    }
+    #creditCardForm {
+        padding: 2px;
+        border: none;
+    }
+    #formContainer {
+        padding: 25px;
+        border-radius: 5ch;
+    }
+}

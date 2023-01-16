@@ -56,6 +56,15 @@ document.getElementById("sportAndHiking").onclick = () => loadContainer(sportAnd
 document.getElementById("historical").onclick = () => loadContainer(historicalTours);
 document.getElementById("sightSeeing").onclick = () => loadContainer(sightSeeingTours);
 document.getElementById("museumAndHeritage").onclick = () => loadContainer(museumAndHeritageTours);
+document.getElementById("dropdown-button").onclick = () => {
+    dropdown = document.getElementById("dropdown");
+    console.log("clicked", dropdown.style)
+    if (dropdown.style.display == "") {
+        dropdown.style.display = "inline-grid";
+    } else {
+        dropdown.style.display = "";
+    }
+}
 
 function loadContainer(tour) {
     if (tour.length == 0) {
@@ -69,14 +78,11 @@ function loadContainer(tour) {
             image = document.createElement('img');
             image.src = "images/tours/" + object.image;
             image.alt = object.alt;
-            image.style.height = "150px";
+            image.className = "imageObject";
             division = document.createElement("figure");
+            division.className = "containerObjects"
             miniDivision = document.createElement("section");
-            miniDivision.style.display = "inline-grid";
-            miniDivision.style.justifyItems = "center";
-            division.style.display = "flex";
-            division.style.flexDirection = "column";
-            division.style.margin = "10px";
+            miniDivision.class = "containerObjectText"
             header = document.createElement("h2");
             article = document.createElement("p");
             button = document.createElement("button");

@@ -1,0 +1,209 @@
+button {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: auto;
+    border-radius: 3ch;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+a.navLinks {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 3ch;
+    display: inline-grid;
+    align-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+li,
+ul {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+li.container {
+    font-size: large;
+    font-weight: bolder;
+    display: inline;
+    height: 3vw;
+}
+
+h1,
+h2 {
+    font-size: xx-large;
+    margin: 10px;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    opacity: 1;
+    background-color: white;
+}
+
+header>section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header>section>img {
+    height: 150px;
+}
+
+header>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#navContainer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#navContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#dropdown-button {
+    display: none;
+}
+
+#dropdown-button>img {
+    display: inherit;
+    height: 30px;
+}
+
+#dropdown {
+    display: none;
+    position: relative;
+    background-color: #083136;
+    top: 2vw;
+    width: 100%;
+    place-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+main {
+    margin-top: 250px;
+}
+
+main>nav,
+main>section>section {
+    border: 2px solid black;
+}
+
+.buttonImage {
+    height: 4vw;
+}
+
+.leftButton,
+.rightButton {
+    height: 8vw;
+    background-color: aliceblue;
+}
+
+.figureObject {
+    display: inline-grid;
+    margin: 5px;
+}
+
+.gridImages {
+    height: 10vw;
+    width: 20vw;
+}
+
+.gridAudios {
+    height: 10vw;
+    width: 20vw;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 1vw;
+}
+
+.slidingContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+@media screen and (max-width:630px) {
+    #navContainer1 {
+        display: none
+    }
+    #dropdown-button {
+        display: inline;
+        width: 60px;
+        padding-left: 15px;
+        margin: 0;
+        margin-top: 10px;
+        padding: auto;
+    }
+    header>section>img {
+        height: 25vw;
+    }
+    main {
+        margin-top: 55vw;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .imageContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .imageContainer {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .gridImages {
+        height: 20vw;
+        width: 40vw;
+    }
+    li,
+    ul {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:450px) {
+    main {
+        margin-top: 70vw;
+    }
+    li,
+    ul {
+        font-size: 15px;
+    }
+}
+
+footer>p {
+    text-align: center;
+}

@@ -18,6 +18,15 @@ let index = 0;
 image = document.getElementById("imageObject");
 image.src = "images/homepage/" + homepageImages[0].image;
 image.alt = homepageImages[0].alt;
+document.getElementById("dropdown-button").onclick = () => {
+    dropdown = document.getElementById("dropdown");
+    console.log("clicked", dropdown.style)
+    if (dropdown.style.display == "") {
+        dropdown.style.display = "inline-grid";
+    } else {
+        dropdown.style.display = "";
+    }
+}
 document.getElementById("leftButton").onclick = function() {
     if (index == 0) {
         index = homepageImages.length - 1

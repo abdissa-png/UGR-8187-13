@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="cssjs/contact.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="images/logo.jpg" alt="Website-logo">
+            <h1>Visit Ethiopia</h1>
+            <nav>
+                <a target="_blank" href="homepage.html">Home</a>
+                <a target="_blank" href="about.html">About</a>
+            </nav>
+            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img src="images/dropdown.jpg"></img></button>
+        </section>
+        <nav id="dropdown">
+            <a target="_blank" href="homepage.html">Home</a><br>
+            <a target="_blank" href="about.html">About</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <img src="images/contact-us.png" alt="Image for contact us" />
+        <section>
+            <section>
+                <h1>GET IN TOUCH</h1>
+                <p>Phone: <span>+25193500379</span></p>
+                <p>Email: <span>12abdissa@gmail.com</span></p>
+                <p>Address: <span>Addis Ababa</span></p>
+                <hr>
+            </section>
+            <form>
+                <section>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required><br>
+                        <label for="phonenum">Phone Number:</label>
+                        <input type="text" name="phonenum" id="phonenum" placeholder="Phone Number" required><br>
+                    </div>
+                    <div>
+                        <label for="comment">Comment: </label>
+                        <textarea name="comment" id="comment" cols="50" placeholder="Enter Your Comment" required></textarea><br>
+                    </div>
+                </section>
+                <input id="submit" value="Send Message" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="cssjs/contact.js"></script>
+
+</html>

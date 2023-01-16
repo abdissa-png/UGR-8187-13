@@ -85,4 +85,13 @@ function loadContainer(object, index = 0) {
     document.getElementById("header").innerHTML = object[index].header;
     document.getElementById("description").innerHTML = object[index].article;
 }
+document.getElementById("dropdown-button").onclick = () => {
+    dropdown = document.getElementById("dropdown");
+    console.log("clicked", dropdown.style)
+    if (dropdown.style.display == "") {
+        dropdown.style.display = "inline-grid";
+    } else {
+        dropdown.style.display = "";
+    }
+}
 loadContainer(popularTours);

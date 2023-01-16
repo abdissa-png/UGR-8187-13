@@ -1,0 +1,164 @@
+button {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 10%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+a {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: auto;
+    border-radius: 1ch;
+    display: inline-grid;
+    align-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+textarea {
+    height: 270px;
+    width: 40vw;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+header>section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header>section>img {
+    height: 150px;
+}
+
+header>section>h1 {
+    text-align: center
+}
+
+header>section>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+main>img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70vw;
+}
+
+main>section {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 50px;
+}
+
+main>section>section>h1 {
+    display: inline-block;
+    text-align: center;
+    border: black solid 2px;
+}
+
+main>section>form>section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+form>section>div {
+    margin-right: 10px;
+}
+
+main>section>form>input {
+    display: inherit;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer>p {
+    text-align: center;
+}
+
+#dropdown-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    width: 15vw;
+}
+
+#dropdown-button>img {
+    display: inherit;
+    width: 10vw;
+    height: 10vw;
+}
+
+#dropdown {
+    display: none;
+    position: relative;
+    background-color: #083136;
+    top: 2vw;
+    width: 100%;
+    place-content: center;
+}
+
+@media screen and (max-width:500px) {
+    header>section>img {
+        height: 30vw;
+    }
+    header>section>nav {
+        display: none
+    }
+    #dropdown-button {
+        display: inline-grid;
+    }
+}
+
+@media screen and (max-width:840px) {
+    main>section>form>section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    input,
+    textarea {
+        display: block;
+        font-weight: 500;
+        font-size: medium;
+        width: 50vw;
+    }
+    textarea {
+        height: 20vw;
+    }
+    input {
+        height: 10vw;
+    }
+}

@@ -1,0 +1,121 @@
+button {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: 10vw;
+    border-radius: 10%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: auto;
+}
+
+a {
+    background-color: #2cbfd3;
+    padding: auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 3ch;
+    display: inline-grid;
+    align-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    opacity: 1;
+    background-color: white;
+}
+
+header>section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header>section>img {
+    width: 150px;
+}
+
+header>section>h1 {
+    text-align: center;
+}
+
+#dropdown-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    width: 15vw;
+}
+
+#dropdown-button>img {
+    display: inherit;
+    width: 10vw;
+    height: 10vw;
+}
+
+#dropdown {
+    display: none;
+    position: relative;
+    background-color: #083136;
+    top: 2vw;
+    width: 100%;
+    place-content: center;
+}
+
+main {
+    margin-top: 160px;
+}
+
+header>section>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+    header>section>img {
+        width: 30vw;
+    }
+    header>section>nav {
+        display: none
+    }
+    #dropdown-button {
+        display: inline-grid;
+    }
+}
+
+#introSection {
+    display: inline-grid;
+    justify-items: center;
+}
+
+h1.title {
+    text-align: center;
+    border: 2px solid black;
+}
+
+video {
+    width: 480px;
+    height: 360px;
+}
+
+@media screen and (max-width:600px) {
+    video {
+        width: 80vw;
+        height: 60vw;
+    }
+}
+
+footer>p {
+    text-align: center;
+}
