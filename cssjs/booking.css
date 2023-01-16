@@ -122,7 +122,7 @@ main>h1 {
 }
 
 #slidingObjects {
-    height: 450px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
 }

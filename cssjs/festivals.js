@@ -18,65 +18,65 @@ culturalpost = [{
     image: "ashenda.jpg",
     alt: "Ashenda Celebrations",
     header: "Ashenda",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Ashenda is a traditional festival celebrated by the Tigray people of Ethiopia, specifically by the Tigrigna-speaking community. The festival is celebrated annually on August 14th, and marks the end of the rainy season and the start of the harvest season. The festival is celebrated with traditional dances, singing, and feasting. Young girls and women, who have just completed their fasting period, dress in traditional clothes and perform traditional dances in the streets.",
     link: "https://en.wikipedia.org/wiki/Ashenda"
 }, {
     image: "irreechaa.jpg",
     alt: "Irreechaa Celebrations",
     header: "Irreecha",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Irreechaa is a traditional festival celebrated by the Oromo people of Ethiopia. It is an annual event that takes place on the second Sunday of October and marks the end of the rainy season and the start of the new year. The festival is celebrated with traditional dances, singing and feasting. During the festival, people dressed in traditional attire, gather at the Hora Arsedi, a large body of water, to give thanks and make offerings to the Waaqa (God) for the blessings of the previous year, and to ask for blessings for the new year. Irreechaa is also a time to reconcile with friends and family, and to renew social and community ties.",
     link: "https://en.wikipedia.org/wiki/Irreechaa"
 }];
 religiousPost = [{
     image: "Meskel.jpg",
     alt: "Meskel Celebrations",
     header: "Meskel(Finding of the true cross)",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Meskel is an ancient Christian festival celebrated by the Ethiopian Orthodox Church and the Eritrean Orthodox Tewahedo Church. The festival commemorates the discovery of the True Cross, the cross on which Jesus was crucified, by Queen Helena, mother of Emperor Constantine the Great, in the 4th century. The festival is celebrated on September 27th and is marked by a colorful procession and the burning of a large bonfire, known as the Meskel Demera, which is meant to symbolize the light of the True Cross. The festival is celebrated with traditional dances, singing and feasting. The festival is also marked by a series of religious rituals and ceremonies, including the laying of a foundation stone for new church buildings.",
     link: "https://en.wikipedia.org/wiki/Meskel"
 }, {
     image: "Timiket.jpg",
     alt: "Timket Celebrations",
     header: "Timket(Epiphany)",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Timket, also known as Epiphany, is an annual religious festival celebrated by the Ethiopian Orthodox Church. It is a three-day event that commemorates the baptism of Jesus in the Jordan River. The festival is celebrated on January 19th, and starts with a colorful procession, where replicas of the Ark of the Covenant are carried through the streets. On the second day, the faithful gather at a nearby river or body of water and participate in a reenactment of the baptism of Jesus. The final day is marked by a feast and the return of the replicas of the Ark of the Covenant to their respective churches.",
     link: "https://en.wikipedia.org/wiki/Timkat"
 }];
 nationalFestivalPost = [{
     image: "newYear.jpg",
     alt: "Ethiopian new year",
     header: "Ethiopian new Year",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Ethiopian New Year, also known as Enkutatash, is an annual event celebrated on September 11th, by the Ethiopian Orthodox Church, and marks the start of the new year in the Ethiopian calendar. The festival is celebrated with traditional dances, singing, and feasting. People dress in traditional clothing and exchange gifts and well wishes. The festival is also marked by the exchange of flowers and the lighting of candles, which symbolize the light of the new year. Enkutatash is a time for family and friends to come together, and to renew social and community ties. The festival also marks the end of the rainy season, and the start of the new agricultural year, with many families visiting the church for prayers for a good harvest.",
     link: "https://en.wikipedia.org/wiki/Enkutatash",
 }, {
     image: "adwa.jpg",
     alt: "Victory of Adwa Celebrations",
     header: "Victory of Adwa",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Adwa Victory Day is a national holiday in Ethiopia, celebrated every year on March 1st to commemorate the Ethiopian victory over the Italian colonial army at the Battle of Adwa in 1896. The victory marked the first and only time in modern history that an African army defeated a colonial European army in a full-scale battle, and has significant symbolic meaning for the Ethiopian people. On this day, there are parades, speeches and patriotic celebrations all over the country. People dress in traditional clothing and the Ethiopian flag is flown everywhere. This day is also a time for reflection, and a reminder of the sacrifices made by the Ethiopian people in the struggle for freedom and independence.",
     link: "https://en.wikipedia.org/wiki/Adwa_Victory_Day",
 }];
 localFestivalPost = [{
     image: "fichee-chambalaalla.jpg",
     alt: "Fichee Chambalaalla celebrations",
     header: "Fichee Chambalaalla",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: " Fichee Chambalaalla is a traditional religious festival celebrated by the Sidama people of Ethiopia. It is a three-day event that is celebrated annually on September 7th, 8th and 9th. The festival is celebrated to honor the spirits of the ancestors who are believed to protect the living and ensure a bountiful harvest. The festival is marked by traditional dances, singing, and feasting. On the first day, people prepare a large meal and invite their ancestors to partake in it. On the second day, people visit the graves of their ancestors and offer food and drink. On the third day, there is a big feast to mark the end of the festival. Fichee Chamballalla is a time for family and friends to come together, and to renew social and community ties. It is considered an important cultural and religious event in Ethiopia, and is celebrated with great enthusiasm and joy.",
     link: "https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054",
 }, {
     image: "gifata.jpg",
     alt: "gifata celebrations",
     header: "Gifata",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "Gifaata or Gifaataa is a cultural festival celebrated by the Wolayta people in the Southern Region of Ethiopia. This festival is celebrated each year in September. In this celebration, the Wolayta accept the New Year and send off the old one. Gifaata means 'the begining' and is also considered the bridge from old to new, dark to light. During Gifaata, the Wolayta dance and enjoy cultural foods. The significance of Gifaata is to eliminate issues of the past and start afresh, reconciling past quarrels and strengthening family and community ties moving forward.",
     link: "https://en.wikipedia.org/wiki/Gifaata",
 }];
 eventsPost = [{
     image: "great ethiopian run.jpg",
     alt: "Great Ethiopian Run",
     header: "Great Ethiopian Run",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "The Great Ethiopian Run is an annual 10k road race held in Addis Ababa, Ethiopia. It is one of the largest and most popular road races in Africa, attracting tens of thousands of participants from all over the world. The race is held on the first Sunday of November and is organized by the Great Ethiopian Run Sports Development Organization. The race starts and finishes at Meskel Square, passing through some of the city's most iconic landmarks such as the National Palace and the African Union headquarters. The event is not only a competitive sports event but also a celebration of Ethiopia's rich culture and history.",
     link: "https://en.wikipedia.org/wiki/Great_Ethiopian_Run",
 }, {
     image: "buildexpo.jpg",
     alt: "build Expo Africa 2023 Logo",
     header: "Build Expo Africa 2023",
-    article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend sagittis dolor, eu vulputate enim vestibulum a. Integer finibus turpis sed odio porttitor lobortis. Aenean vitae scelerisque libero, in vehicula dolor. Suspendisse potenti. Donec et placerat tellus, nec iaculis nibh. Proin id odio at arcu efficitur ornare. Pellentesque in suscipit arcu.",
+    article: "The Build Expo is an annual trade show and exhibition that focuses on the building and construction industry. It is one of the largest and most important events of its kind in the region, and attracts exhibitors and visitors from all over the world. The event features a wide range of products and services related to the building and construction industry, including building materials, construction equipment, and technology. The expo also includes seminars and workshops on various topics related to the industry, such as sustainable building practices, new technologies, and regulations.",
     link: "https://www.expogr.com/ethiopia/buildexpo/",
 }];
 container = document.getElementById("container");
