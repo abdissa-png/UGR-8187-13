@@ -111,5 +111,5 @@ function getData(form) {
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
     getData(e.target);
-    alert("Your comment has been submited");
+    alert("Your booking has been reserved");
 });
