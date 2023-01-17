@@ -90,17 +90,23 @@ function loadContainer(post) {
     for (let i = 0; i < Math.ceil(post.length / 2); i++) {
         container.innerHTML = "";
         division = document.createElement("figure");
-        division.className = "figureContainer"
+        //division.className = "figureContainer"
+        division.className = "figure figure--grid"
         image = document.createElement("img");
+        image.className = "figure__img--large"
         image.src = "images/festivals/" + post[i].image;
         image.alt = post[i].alt;
         miniDivision = document.createElement("section");
-        miniDivision.className = "textSection";
+        //miniDivision.className = "textSection";
+        miniDivision.className = "section section--inline-grid"
         header = document.createElement("h1");
+        header.className = "figure__header"
         header.innerHTML = post[i].header;
         article = document.createElement("p");
+        article.className = "article"
         link = document.createElement("a");
-        link.className = "figureContainerLink"
+        //link.className = "figureContainerLink"
+        link.className = "figure__link"
         link.target = "_blank";
         link.href = post[i].link;
         link.innerHTML = "Read More....";
@@ -115,6 +121,7 @@ function loadContainer(post) {
         container.appendChild(breakLine);
     }
     SeeMore = document.createElement("button");
+    SeeMore.className = "section_button--block"
     SeeMore.id = "seeMoreButton";
     SeeMore.innerHTML = "See More";
     container.appendChild(SeeMore);
@@ -122,17 +129,23 @@ function loadContainer(post) {
         container.innerHTML = "";
         post.forEach(object => {
             division = document.createElement("figure");
-            division.className = "figureContainer"
+            //division.className = "figureContainer"
+            division.className = "figure figure--grid"
             image = document.createElement("img");
+            image.className = "figure__img--large"
             image.src = "images/festivals/" + object.image;
             image.alt = object.alt;
             miniDivision = document.createElement("section");
-            miniDivision.className = "textSection";
+            //miniDivision.className = "textSection";
+            miniDivision.className = "section section--inline-grid"
             header = document.createElement("h1");
+            header.className = "figure__header"
             header.innerHTML = object.header;
             article = document.createElement("p");
+            article.className = "article"
             link = document.createElement("a");
-            link.className = "figureContainerLink"
+            //link.className = "figureContainerLink"
+            link.className = "figure__link"
             link.target = "_blank";
             link.href = object.link;
             link.innerHTML = "Read More....";
@@ -179,7 +192,8 @@ function loadImages(index) {
     document.getElementById("imageContainer2").innerHTML = "";
     for (let i = index; i < index + numOfObjects; i++) {
         imageObj = document.createElement("img");
-        imageObj.className = "container2Images";
+        //imageObj.className = "container2Images";
+        imageObj.className = "figure__img--secondary"
         imageObj.src = "images/festivals/" + Images[i % Images.length].image;
         imageObj.alt = Images[i % Images.length].alt;
         document.getElementById("imageContainer2").appendChild(imageObj);

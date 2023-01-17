@@ -27,7 +27,7 @@ a {
     font-weight: bold;
 }
 
-header {
+.header {
     position: fixed;
     z-index: 100;
     top: 0px;
@@ -36,42 +36,42 @@ header {
     background-color: white;
 }
 
-header>section {
+.section.section--grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-header>section>img {
+.section__img {
     height: 150px;
 }
 
-header>nav {
+.nav.nav--primary {
     display: grid;
     grid-template-columns: 1fr 1fr
 }
 
-#navContainer1 {
+.nav.nav--left {
     display: flex;
     flex-direction: row;
 }
 
-#navContainer2 {
+.nav.nav--right {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#dropdown-button {
+.nav__button {
     display: none;
 }
 
-#dropdown-button>img {
+.nav__img {
     display: inherit;
     height: 30px;
 }
 
-#dropdown {
+.nav.nav--dropdown {
     display: none;
     position: relative;
     background-color: #083136;
@@ -80,43 +80,41 @@ header>nav {
     place-content: center;
 }
 
-main {
+.main {
     margin-top: 250px;
 }
 
-#slidingContainer1,
-#slidingContainer2 {
+.aside.aside--primary,
+.aside.aside--secondary {
     height: 30vw;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     align-items: center;
 }
 
-#leftButton1,
-#rightButton1,
-#leftButton2,
-#rightButton2 {
+.aside__button--primary,
+.aside__button--secondary {
     height: 20vw;
     width: 8vw;
     background-color: aliceblue;
 }
 
-#imageContainer1 {
+.figure.figure--primary {
     display: inline-grid;
     justify-items: center;
     align-items: center
 }
 
-#imageObject1 {
+.figure__img--primary {
     height: 25vw;
     width: 40vw;
 }
 
-.buttonImage {
+.aside__img--small {
     width: 4vw;
 }
 
-main>nav {
+.nav.nav--secondary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -125,13 +123,12 @@ main>nav {
     margin: 20px;
 }
 
-#container {
+.section.section--inline-grid {
     display: inline-grid;
-    margin-left: 5vw;
     align-items: center;
 }
 
-.figureContainer {
+.figure.figure--grid {
     background-color: #c9e2dd8c;
     display: grid;
     margin: 30px;
@@ -139,42 +136,44 @@ main>nav {
     align-items: center;
 }
 
-.textSection {
+.section.section--inline-grid {
     display: inline-grid;
     justify-items: center;
 }
 
-.figureContainerLink {
+.figure__link {
     border: 1px solid black;
     border-radius: 1ch;
     color: black;
     width: auto;
+    height: auto;
+    padding: 5px;
 }
 
-.figureContainer>img {
+.figure__img--large {
     height: 25vw;
     width: 35vw;
-    margin-right: 5vw;
+    margin: 2vw;
 }
 
-#imageContainer2 {
+.figure.figure--secondary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin: 2vw;
 }
 
-.container2Images {
+.figure__img--secondary {
     height: 10vw;
     width: 20vw;
     margin: 2vw;
 }
 
 @media screen and (max-width:750px) {
-    #navContainer1 {
+    .nav.nav--left {
         display: none
     }
-    #dropdown-button {
+    .nav__button {
         display: inline;
         width: 60px;
         padding-left: 15px;
@@ -182,22 +181,22 @@ main>nav {
         margin-top: 10px;
         padding: auto;
     }
-    header>section>img {
+    .section__img {
         height: 25vw;
     }
-    main {
+    .main {
         margin-top: 55vw;
     }
 }
 
 @media screen and (max-width:630px) {
-    main>nav {
+    .nav.nav--secondary {
         grid-template-columns: 1fr 1fr 1fr
     }
-    #imageContainer2 {
+    .figure.figure--secondary {
         grid-template-columns: 1fr;
     }
-    .container2Images {
+    .figure__img--secondary {
         height: 25vw;
         width: 55vw;
         margin: 1vw;
@@ -205,16 +204,16 @@ main>nav {
 }
 
 @media screen and (max-width:420px) {
-    main>nav {
+    .nav.nav--secondary {
         grid-template-columns: 1fr 1fr;
     }
-    #container {
+    .section.section--inline-grid {
         align-items: center;
     }
-    .figureContainer {
+    .figure.figure--grid {
         margin: 0;
     }
-    .textSection {
+    .section.section--inline-grid {
         display: inline-grid;
         align-items: center;
         justify-items: center;
@@ -222,20 +221,21 @@ main>nav {
 }
 
 @media screen and (max-width:700px) {
-    .figureContainer {
+    .figure.figure--grid {
         display: grid;
         grid-template-columns: 1fr;
     }
-    #container {
+    .section.section--inline-grid {
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .figureContainer>img {
-        width: 60vw;
+    .figure__img--large {
+        width: -webkit-fill-available;
+        margin: 0;
         height: 30vw;
     }
 }
 
-footer>p {
+.footer__paragraph {
     text-align: center;
 }

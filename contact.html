@@ -6,39 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="cssjs/contact.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
-            <nav>
+    <header class="header">
+        <section class="section section--grid">
+            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header">Visit Ethiopia</h1>
+            <nav class="nav">
                 <a target="_blank" href="index.html">Home</a>
                 <a target="_blank" href="about.html">About</a>
             </nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <button class="section__button" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="section__img--small" alt="dropdown" src="images/dropdown.jpg"></img></button>
         </section>
-        <nav id="dropdown">
+        <nav class="nav nav--dropdown" id="dropdown">
             <a target="_blank" href="index.html">Home</a><br>
             <a target="_blank" href="about.html">About</a>
         </nav>
         <hr>
     </header>
-    <main>
-        <img src="images/contact-us.png" alt="Image for contact us" />
-        <section>
-            <section>
-                <h1>GET IN TOUCH</h1>
-                <p>Phone: <span>+25193500379</span></p>
-                <p>Email: <span>12abdissa@gmail.com</span></p>
-                <p>Address: <span>Addis Ababa</span></p>
+    <main class="main">
+        <img class="main__img" src="images/contact-us.png" alt="Image for contact us" />
+        <section class="section section--flex-small">
+            <section class="section scetion--block">
+                <h1 class="section__header--small">GET IN TOUCH</h1>
+                <p class="section__paragraph">Phone: <span>+25193500379</span></p>
+                <p class="section__paragraph">Email: <span>12abdissa@gmail.com</span></p>
+                <p class="section__paragraph">Address: <span>Addis Ababa</span></p>
                 <hr>
             </section>
-            <form>
-                <section>
-                    <div>
+            <form id="form" class="form" method="post">
+                <section class="section section--flex-large">
+                    <div class="form__item">
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="Name" required><br>
                         <label for="email">Email:</label>
@@ -46,7 +46,7 @@
                         <label for="phonenum">Phone Number:</label>
                         <input type="text" name="phonenum" id="phonenum" placeholder="Phone Number" required><br>
                     </div>
-                    <div>
+                    <div class="form__item">
                         <label for="comment">Comment: </label>
                         <textarea name="comment" id="comment" cols="50" placeholder="Enter Your Comment" required></textarea><br>
                     </div>
@@ -55,11 +55,11 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
 </body>
-<script src="cssjs/contact.js"></script>
+<script src="js/contact.js"></script>
 
 </html>

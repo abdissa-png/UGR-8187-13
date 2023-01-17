@@ -25,7 +25,7 @@ a {
     font-weight: bold;
 }
 
-header {
+.header {
     position: fixed;
     z-index: 100;
     top: 0px;
@@ -34,22 +34,22 @@ header {
     background-color: white;
 }
 
-header>section {
+.section.section--grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-header>section>img {
+.section__img {
     width: 150px;
 }
 
-header>section>h1 {
+.section__header--large {
     text-align: center;
 }
 
-#dropdown-button {
+.nav__button {
     display: none;
     justify-content: center;
     align-items: center;
@@ -57,13 +57,13 @@ header>section>h1 {
     width: 15vw;
 }
 
-#dropdown-button>img {
+.section__img--small {
     display: inherit;
     width: 10vw;
     height: 10vw;
 }
 
-#dropdown {
+.nav.nav--dropdown {
     display: none;
     position: relative;
     background-color: #083136;
@@ -72,50 +72,50 @@ header>section>h1 {
     place-content: center;
 }
 
-main {
+.main {
     margin-top: 160px;
 }
 
-header>section>nav {
+.nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
 
 @media screen and (max-width:500px) {
-    header>section>img {
+    .section__img {
         width: 30vw;
     }
-    header>section>nav {
+    .nav {
         display: none
     }
-    #dropdown-button {
+    .nav__button {
         display: inline-grid;
     }
 }
 
-#introSection {
+.section.section--block-main {
     display: inline-grid;
     justify-items: center;
 }
 
-h1.title {
+.main__header--title {
     text-align: center;
     border: 2px solid black;
 }
 
-video {
+.video {
     width: 480px;
     height: 360px;
 }
 
 @media screen and (max-width:600px) {
-    video {
+    .video {
         width: 80vw;
         height: 60vw;
     }
 }
 
-footer>p {
+.footer__paragraph {
     text-align: center;
 }

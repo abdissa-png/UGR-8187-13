@@ -6,51 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <link rel="stylesheet" href="cssjs/booking.css">
+    <link rel="stylesheet" href="css/booking.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
+    <header class="header">
+        <section class="section section--grid">
+            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header">Visit Ethiopia</h1>
         </section>
-        <nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
-            <div id="navContainer1">
+        <nav class="nav nav--primary">
+            <button class="nav__button--primary" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="nav__img" alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <div class="nav nav--left" id="navContainer1">
                 <a target="_blank" href="tours.html">Tours</a>
                 <a target="_blank" href="festivals.html">Festivals</a>
                 <a target="_blank" href="discover.html">Discover</a>
             </div>
-            <div id="navContainer2">
+            <div class="nav nav--right" id="navContainer2">
                 <a target="_blank" href="about.html">About</a>
                 <a target="_blank" href="contact.html">Contact</a>
             </div>
 
         </nav>
-        <nav id="dropdown">
+        <nav class="nav nav--dropdown" id="dropdown">
             <a target="_blank" href="tours.html">Tours</a>
             <a target="_blank" href="festivals.html">Festivals</a>
             <a target="_blank" href="discover.html">Discover</a>
         </nav>
         <hr>
     </header>
-    <main>
-        <nav>
-            <button id="popular">Popular Destinations</button>
-            <button id="best">Best Deals</button>
-            <button id="discounted">Discounted Tours</button>
-            <button id="new">New Destinations</button>
+    <main class="main">
+        <nav class="nav nav--secondary">
+            <button class="nav__button--secondary" id="popular">Popular Destinations</button>
+            <button class="nav__button--secondary" id="best">Best Deals</button>
+            <button class="nav__button--secondary" id="discounted">Discounted Tours</button>
+            <button class="nav__button--secondary" id="new">New Destinations</button>
         </nav>
-        <h1>Explore Destinations</h1>
-        <section id="slidingObjects">
-            <button id="leftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-            <figure id="objectContainer">
-                <figure id="imageContainer">
-                    <img id="imageObject">
+        <h1 class="main__header">Explore Destinations</h1>
+        <section class="section section--grid-main" id="slidingObjects">
+            <!--buttonImage-->
+            <button class="section__button" id="leftButton"><img class="section__button--icon" src="images/left.png" alt="left arrow"></button>
+            <figure class="figure figure--large" id="objectContainer">
+                <figure class="figure figure--small" id="imageContainer">
+                    <img class="figure_img" id="imageObject">
                 </figure>
-                <section>
-                    <table>
+                <section class="section section--grid-small">
+                    <table class="table">
                         <th>
                             Location
                         </th>
@@ -78,24 +79,25 @@
                             </td>
                         </tr>
                     </table>
-                    <section>
-                        <h1 id="header">
+                    <section class="section section--grid-smaller">
+                        <h1 class="section__header--small" id="header">
 
                         </h1>
-                        <p id="description">
+                        <p class="section__paragraph--description" id="description">
 
                         </p>
                     </section>
                 </section>
             </figure>
-            <button id="rightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+            <!--buttonImage-->
+            <button class="section__button" id="rightButton"><img class="section__button--icon" src="images/right.png" alt="right arrow"></button>
         </section>
         <hr>
-        <section id="formContainer">
-            <h1>Book A Tour</h1>
-            <form>
-                <div>
-                    <section>
+        <section class="section section--block" id="formContainer">
+            <h1 class="section__header--inline">Book A Tour</h1>
+            <form id="form" class="form" method="post">
+                <div class="form__item">
+                    <section class="form__component">
                         <label for="firstname">First Name:</label>
                         <input id="firstname" name="firstname" type="text" placeholder="Enter First Name" required><br>
                         <label for="lastname">Last Name:</label>
@@ -117,8 +119,8 @@
                         <option value="package-3">package-3</option>
                     </select><br>
                     </section>
-                    <section id="creditCardForm">
-                        <h2>Credit Card Information</h2>
+                    <section class="form__component--card" id="creditCardForm">
+                        <h2 class="section__header--card">Credit Card Information</h2>
                         <label for="creditnum">Credit Card Number:</label>
                         <input id="creditnum" name="creditnum" placeholder="Card Number" required><br>
                         <label for="expirydate">Expiry Date:</label>
@@ -127,15 +129,15 @@
                         <input id="cvc" name="cvc" placeholder="CVC" required>
                     </section>
                 </div>
-                <input id="submit" value="Book Now" type="submit">
+                <input class="input input--submit" id="submit" value="Book Now" type="submit">
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
 </body>
-<script src="cssjs/booking.js"></script>
+<script src="js/booking.js"></script>
 
 </html>

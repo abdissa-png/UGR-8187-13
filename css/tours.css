@@ -27,7 +27,7 @@ a {
     font-weight: bold;
 }
 
-header {
+.header {
     position: fixed;
     z-index: 100;
     top: 0px;
@@ -36,32 +36,32 @@ header {
     background-color: white;
 }
 
-header>section {
+.section.section--grid-small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-header>section>img {
+.section__img--main {
     height: 150px;
 }
 
-header>nav {
+.nav.nav--primary {
     display: grid;
     grid-template-columns: 1fr 1fr
 }
 
-#dropdown-button {
+.nav__button--dropdown {
     display: none;
 }
 
-#dropdown-button>img {
+.nav__img {
     display: inherit;
     height: 30px;
 }
 
-#dropdown {
+.nav.nav--dropdown {
     display: none;
     position: relative;
     background-color: #083136;
@@ -70,63 +70,64 @@ header>nav {
     place-content: center;
 }
 
-#navContainer1 {
+.nav.nav--left {
     display: flex;
     flex-direction: row;
 }
 
-#navContainer2 {
+.nav.nav--right {
     display: flex;
     flex-direction: row-reverse;
 }
 
-main {
+.main {
     margin-top: 250px;
 }
 
-main>h1 {
+.main__header {
     text-align: center;
     border: 1px solid black
 }
 
-main>nav {
+.nav.nav--secondary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
 
-section#container {
+.section.section--grid-large {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.imageObject {
+.section__img--small {
     height: 15vw;
     width: 30vw;
 }
 
-.containerObjects {
-    /*
-    display: flex;
-    */
+.figure {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     width: auto;
     margin: 10px;
 }
 
-.containerObjectText {
+.section.section--block {
     display: inline-grid;
     justify-items: center;
 }
 
-footer>p {
+.footer__paragraph {
     text-align: center;
 }
 
 @media screen and (max-width:750px) {
-    #navContainer1 {
+    .nav.nav--left {
         display: none
     }
-    #dropdown-button {
+    .nav__button--dropdown {
         display: inline;
         width: 60px;
         padding-left: 15px;
@@ -134,39 +135,39 @@ footer>p {
         margin-top: 10px;
         padding: auto;
     }
-    header>section>img {
+    .section__img--main {
         height: 25vw;
     }
-    main {
+    .main {
         margin-top: 55vw;
     }
 }
 
 @media screen and (max-width:930px) {
-    main>nav {
+    .nav.nav--secondary {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    section#container {
+    .section.section--grid-large {
         grid-template-columns: 1fr 1fr;
     }
-    .imageObject {
+    .section__img--small {
         height: 20vw;
         width: 40vw;
     }
 }
 
 @media screen and (max-width:650px) {
-    section#container {
+    .section.section--grid-large {
         grid-template-columns: 1fr;
     }
-    .imageObject {
+    .section__img--small {
         height: 30vw;
         width: 60vw;
     }
 }
 
 @media screen and (max-width:490px) {
-    main>nav {
+    .nav.nav--secondary {
         grid-template-columns: 1fr 1fr;
     }
 }

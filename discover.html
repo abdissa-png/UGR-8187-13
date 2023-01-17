@@ -6,36 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
-    <link rel="stylesheet" href="cssjs/discover.css">
+    <link rel="stylesheet" href="css/discover.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
+    <header class="header">
+        <section class="section section--grid">
+            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header">Visit Ethiopia</h1>
         </section>
-        <nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
-            <div id="navContainer1">
-                <a class="navLinks" target="_blank" href="tours.html">Tours</a>
-                <a class="navLinks" target="_blank" href="festivals.html">Festivals</a>
-                <a class="navLinks" target="_blank" href="Booking.html">Bookings</a>
+        <nav class="nav nav--primary">
+            <button class="nav__button" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="nav__img" alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <div class="nav nav--left" id="navContainer1">
+                <a class="nav__link" target="_blank" href="tours.html">Tours</a>
+                <a class="nav__link" target="_blank" href="festivals.html">Festivals</a>
+                <a class="nav__link" target="_blank" href="Booking.html">Bookings</a>
             </div>
-            <div id="navContainer2">
-                <a class="navLinks" target="_blank" href="about.html">About</a>
-                <a class="navLinks" target="_blank" href="contact.html">Contact</a>
+            <div class="nav nav--right" id="navContainer2">
+                <a class="nav__link" target="_blank" href="about.html">About</a>
+                <a class="nav__link" target="_blank" href="contact.html">Contact</a>
             </div>
         </nav>
-        <nav id="dropdown">
-            <a class="navLinks" target="_blank" href="tours.html">Tours</a>
-            <a class="navLinks" target="_blank" href="festivals.html">Festivals</a>
-            <a class="navLinks" target="_blank" href="Booking.html">Bookings</a>
+        <nav class="nav nav--dropdown" id="dropdown">
+            <a class="nav__link" target="_blank" href="tours.html">Tours</a>
+            <a class="nav__link" target="_blank" href="festivals.html">Festivals</a>
+            <a class="nav__link" target="_blank" href="Booking.html">Bookings</a>
         </nav>
         <hr>
     </header>
-    <main>
-        <nav>
+    <main class="main">
+        <nav class="nav nav--secondary">
             <ul>
                 <li><a href="#cultureHeader">Culture</a></li>
                 <li><a href="#thingsToDoHeader">Discover Things To Do</a></li>
@@ -49,12 +49,13 @@
             </ul>
         </nav>
         <section>
-            <section>
-                <h1 id="cultureHeader">Culture</h1>
+            <section class="section section--grid-large">
+                <h1 class="section__header--main" id="cultureHeader">Culture</h1>
                 <ul>
-                    <li class="container">
-                        <h2>History</h2>
-                        <p>
+                    <!--li.container-->
+                    <li class="list">
+                        <h2 class="section__header--sub">History</h2>
+                        <p class="list__paragraph">
                             Ethiopia is a land of contrasts and diversity, with a rich history and culture dating back thousands of years. Known as the "cradle of civilization," Ethiopia is home to some of the earliest known human remains and evidence of human civilization. The
                             Axumite Empire, which emerged around the 1st century AD, was one of the most powerful empires in the ancient world and controlled much of the Horn of Africa. The empire was known for its impressive engineering feats, including
                             the construction of massive stone stelae, or obelisks. In the 14th century, the Solomonic dynasty came to power and established a centralized government, which lasted for over 700 years. During this period, Ethiopia became
@@ -62,86 +63,89 @@
                             ethnic groups and over 200 dialects spoken. The country's rich culture is reflected in its traditional art, music, and cuisine, which is a blend of African, Arabian, and Indian influences.
                         </p>
                     </li>
-                    <li class="container">
-                        <h2>Arts and Music</h2>
-                        <section class="slidingContainer" id="artAndMusic">
-                            <button class="leftButton" id="artAndMusicLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="artAndMusicImageContainer">
+                    <li class="list">
+                        <h2 class="section__header--sub">Arts and Music</h2>
+                        <!--slidingContainer-->
+                        <section class="section section--grid" id="artAndMusic">
+                            <!--for all btns section btns-->
+                            <button class="section__button" id="artAndMusicLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="artAndMusicImageContainer">
+                                <!--imageContainer-->
                             </figure>
-                            <button class="rightButton" id="artAndMusicRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+                            <button class="section__button" id="artAndMusicRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
-                    <li class="container">
-                        <h2>Peoples</h2>
-                        <section class="slidingContainer" id="peoples">
-                            <button class="leftButton" id="peoplesLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="peoplesImageContainer">
+                    <li class="list">
+                        <h2 class="section__header--sub">Peoples</h2>
+                        <section class="section section--grid" id="peoples">
+                            <button class="section__button" id="peoplesLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="peoplesImageContainer">
                             </figure>
-                            <button class="rightButton" id="peoplesRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                </ul>
-            </section>
-            <section style="border: 2px solid black;">
-                <h1 id="thingsToDoHeader">Things To Do</h1>
-                <ul>
-                    <li class="container">
-                        <h2>Cultural Experiences</h2>
-                        <section class="slidingContainer" id="culture">
-                            <button class="leftButton" id="cultureLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="cultureImageContainer">
-                            </figure>
-                            <button class="rightButton" id="cultureRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                    <li class="container">
-                        <h2>Nature Experiences</h2>
-                        <section class="slidingContainer" id="nature">
-                            <button class="leftButton" id="natureLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="natureImageContainer">
-                            </figure>
-                            <button class="rightButton" id="natureRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                    <li class="container">
-                        <h2>Outdoor and Adventure</h2>
-                        <section class="slidingContainer" id="outdoor">
-                            <button class="leftButton" id="outdoorLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="outdoorImageContainer">
-                            </figure>
-                            <button class="rightButton" id="outdoorRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+                            <button class="section__button" id="peoplesRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                 </ul>
             </section>
             <section style="border: 2px solid black;">
-                <h1 id="attractionsHeader">Attractions</h1>
+                <h1 class="section__header--main" id="thingsToDoHeader">Things To Do</h1>
                 <ul>
-                    <li class="container">
-                        <h2 id="eventsHeader">Events</h2>
-                        <section class="slidingContainer" id="events">
-                            <button class="leftButton" id="eventsLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="eventsImageContainer">
+                    <li class="list">
+                        <h2 class="section__header--sub">Cultural Experiences</h2>
+                        <section class="section section--grid" id="culture">
+                            <button class="section__button" id="cultureLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="cultureImageContainer">
                             </figure>
-                            <button class="rightButton" id="eventsRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+                            <button class="section__button" id="cultureRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
-                    <li class="container">
-                        <h2 id="floraAndFaunaHeader">Flora and Fauna</h2>
-                        <section class="slidingContainer" id="floraAndFauna">
-                            <button class="leftButton" id="floraAndFaunaLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="floraAndFaunaImageContainer">
+                    <li class="list">
+                        <h2 class="section__header--sub">Nature Experiences</h2>
+                        <section class="section section--grid" id="nature">
+                            <button class="section__button" id="natureLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="natureImageContainer">
                             </figure>
-                            <button class="rightButton" id="floraAndFaunaRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+                            <button class="section__button" id="natureRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
-                    <li class="container">
-                        <h2 id="heritageHeader">World Heritage Sites</h2>
-                        <section class="slidingContainer" id="heritage">
-                            <button class="leftButton" id="heritageLeftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-                            <figure class="imageContainer" id="heritageImageContainer">
+                    <li class="list">
+                        <h2 class="section__header--sub">Outdoor and Adventure</h2>
+                        <section class="section section--grid" id="outdoor">
+                            <button class="section__button" id="outdoorLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="outdoorImageContainer">
                             </figure>
-                            <button class="rightButton" id="heritageRightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+                            <button class="section__button" id="outdoorRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <section style="border: 2px solid black;">
+                <h1 class="section__header--main" id="attractionsHeader">Attractions</h1>
+                <ul>
+                    <li class="list">
+                        <h2 class="section__header--sub" id="eventsHeader">Events</h2>
+                        <section class="section section--grid" id="events">
+                            <button class="section__button" id="eventsLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="eventsImageContainer">
+                            </figure>
+                            <button class="section__button" id="eventsRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="list">
+                        <h2 class="section__header--sub" id="floraAndFaunaHeader">Flora and Fauna</h2>
+                        <section class="section section--grid" id="floraAndFauna">
+                            <button class="section__button" id="floraAndFaunaLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="floraAndFaunaImageContainer">
+                            </figure>
+                            <button class="section__button" id="floraAndFaunaRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="list">
+                        <h2 class="section__header--sub" id="heritageHeader">World Heritage Sites</h2>
+                        <section class="section section--grid" id="heritage">
+                            <button class="section__button" id="heritageLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
+                            <figure class="figure" id="heritageImageContainer">
+                            </figure>
+                            <button class="section__button" id="heritageRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                 </ul>
@@ -150,11 +154,11 @@
 
 
     </main>
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
 </body>
-<script src="cssjs/discover.js"></script>
+<script src="js/discover.js"></script>
 
 </html>

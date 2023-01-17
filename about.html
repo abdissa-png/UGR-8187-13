@@ -6,62 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="cssjs/about.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
-            <nav>
+    <header class="header">
+        <section class="section section--grid">
+            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header--large">Visit Ethiopia</h1>
+            <nav class="nav">
                 <a target="_blank" href="index.html">Home</a>
                 <a target="_blank" href="contact.html">Contact</a>
             </nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <button class="nav__button" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="section__img--small" alt="dropdown" src="images/dropdown.jpg"></img></button>
         </section>
-        <nav id="dropdown">
+        <nav class="nav nav--dropdown" id="dropdown">
             <a target="_blank" href="index.html">Home</a><br>
             <a target="_blank" href="contact.html">Contact</a>
         </nav>
         <hr>
     </header>
-    <main>
-        <section id="introSection">
-            <h1 class="title">What We Do</h1>
-            <article>At our tourism website, we are dedicated to providing you with all the information you need to plan the perfect vacation. Our easy-to-use website offers a wealth of information about our destination, including detailed descriptions of popular
+    <main class="main">
+        <section class="section section--block-main">
+            <h1 class="main__header--title">What We Do</h1>
+            <!--class title-->
+            <article class="article">At our tourism website, we are dedicated to providing you with all the information you need to plan the perfect vacation. Our easy-to-use website offers a wealth of information about our destination, including detailed descriptions of popular
                 attractions, activities, and events. We also provide information about accommodation options, including hotels, resorts, and vacation rentals, as well as dining and shopping options. We understand that planning a vacation can be overwhelming,
                 which is why we are here to help. Our team of experts is available to answer any questions you may have and to provide personalized recommendations based on your interests and budget. We also offer a variety of travel packages and deals,
                 including discounted rates on accommodation, transportation, and activities. Whether you're traveling alone, with family, or as a group, we have a package to suit your needs.
             </article>
-            <video controls>
+            <video class="video" controls>
                 <source src="videos/description.mp4" type="video/mp4">
                 Description Video
               </video>
         </section>
         <hr>
-        <section>
-            <h1 class="title">List of Services</h1>
+        <section class="section section--block-sub">
+            <h1 class="main__header--title">List of Services</h1>
             <ul>
                 <li>
-                    <p>Providing Information to Tourists</p>
-                    <p>
+                    <p class="main__paragraph--title">Providing Information to Tourists</p>
+                    <p class="main__paragraph--description">
                         As a tourism website, our primary role is to provide visitors with all the information they need to plan and enjoy their trip to our destination. We strive to be a one-stop-shop for everything related to travel, offering a wide range of information and
                         resources to help visitors make the most of their time here. We provide detailed information on popular attractions, activities, and events.We understand that every traveler is unique, with different interests and budgets. That's
                         why we offer personalized recommendations and travel packages tailored to meet the specific needs of each individual visitor.
                     </p>
                 </li>
                 <li>
-                    <p>Giving Booking services</p>
-                    <p>
+                    <p class="main__paragraph--title">Giving Booking services</p>
+                    <p class="main__paragraph--description">
                         At our tourism website, we understand that booking tours and activities can often be a hassle for travelers, which is why we offer a variety of convenient booking services to make the process as smooth and stress-free as possible.Our easy-to-use booking
                         system allows visitors to browse and book tours online. We also provide detailed information about each tour, including departure times, locations. In addition to our online booking services, our team of experts is always available
                         to answer any questions and provide personalized recommendations based on the visitor's interests and budget. We also offer package deals that include multiple tours and activities at a discounted rate.
                     </p>
                 </li>
                 <li>
-                    <p>Raising Awareness</p>
-                    <p>
+                    <p class="main__paragraph--title">Raising Awareness</p>
+                    <p class="main__paragraph--description">
                         As a tourism website, we are dedicated to raising awareness and promoting Ethiopia as a must-see destination for travelers. Our website is a comprehensive resource for visitors, providing detailed information on the country's history, culture, and attractions.
                         Ethiopia is a land of contrasts, with a rich and diverse culture, stunning landscapes, and a wide range of activities. From the ancient rock-hewn churches of Lalibela, to the breathtaking views of the Simien Mountains, Ethiopia
                         is a destination that has something to offer for everyone.
@@ -70,11 +71,11 @@
             </ul>
             </div>
     </main>
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
 </body>
-<script src="cssjs/about.js"></script>
+<script src="js/about.js"></script>
 
 </html>

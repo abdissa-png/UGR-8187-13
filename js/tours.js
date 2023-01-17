@@ -1,4 +1,3 @@
-container = document.getElementById("container");
 educationalTours = [];
 piligrimageTours = [];
 sportAndHikingTours = [];
@@ -59,6 +58,7 @@ sightSeeingTours = [{
     link: "https://en.wikipedia.org/wiki/Tiya"
 }];
 museumAndHeritageTours = [];
+container = document.getElementById("container");
 document.getElementById("educational").onclick = () => loadContainer(educationalTours);
 document.getElementById("piligrimage").onclick = () => loadContainer(piligrimageTours);
 document.getElementById("sportAndHiking").onclick = () => loadContainer(sportAndHikingTours);
@@ -79,6 +79,7 @@ function loadContainer(tour) {
     if (tour.length == 0) {
         container.textContent = "";
         text = document.createElement("h1");
+        text.className = "main__header--small";
         text.innerHTML = "Sorry,we currently do not have any tours in this category";
         container.appendChild(text);
     } else {
@@ -87,14 +88,17 @@ function loadContainer(tour) {
             image = document.createElement('img');
             image.src = "images/tours/" + object.image;
             image.alt = object.alt;
-            image.className = "imageObject";
+            image.className = "section__img--small";
             division = document.createElement("figure");
-            division.className = "containerObjects"
+            division.className = "figure";
             miniDivision = document.createElement("section");
-            miniDivision.class = "containerObjectText"
+            miniDivision.className = "section section--block"
             header = document.createElement("h2");
+            header.className = "section__header--medium"
             article = document.createElement("p");
+            article.className = "article"
             button = document.createElement("a");
+            button.className = "section__button"
             header.innerHTML = object.header;
             article.innerHTML = object.description;
             button.innerHTML = "Explore";

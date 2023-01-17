@@ -1,3 +1,4 @@
+8
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,29 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="cssjs/homepage.css">
+    <link rel="stylesheet" href="css/homepage.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
+    <header class="header">
+        <section class="section section--grid">
+            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header">Visit Ethiopia</h1>
         </section>
-        <nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
-            <div id="navContainer1">
+        <nav class="nav">
+            <button class="nav__button" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="nav__img" alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <div class="nav nav--left" id="navContainer1">
                 <a target="_blank" href="tours.html">Tours</a>
                 <a target="_blank" href="festivals.html">Festivals</a>
                 <a target="_blank" href="Booking.html">Bookings</a>
                 <a target="_blank" href="discover.html">Discover</a>
             </div>
-            <div id="navContainer2">
+            <div class="nav nav--right" id="navContainer2">
                 <a target="_blank" href="about.html">About</a>
                 <a target="_blank" href="contact.html">Contact</a>
             </div>
         </nav>
-        <nav id="dropdown">
+        <nav class="nav nav--dropdown" id="dropdown">
             <a target="_blank" href="tours.html">Tours</a>
             <a target="_blank" href="festivals.html">Festivals</a>
             <a target="_blank" href="Booking.html">Bookings</a>
@@ -36,37 +37,37 @@
         </nav>
         <hr>
     </header>
-    <main>
-        <aside id="slidingContainer">
-            <button class="scrollButton" id="leftButton"><img class="buttonImage" src="images/left.png" alt="left arrow"></button>
-            <figure id="imageContainer">
-                <img id="imageObject">
+    <main class="main">
+        <aside class="aside">
+            <button class="aside__button" id="leftButton"><img class="aside__img--small" src="images/left.png" alt="left arrow"></button>
+            <figure class="aside__figure" id="imageContainer">
+                <img class="aside__img--large" id="imageObject">
             </figure>
-            <button class="scrollButton" id="rightButton"><img class="buttonImage" src="images/right.png" alt="right arrow"></button>
+            <button class="aside__button" id="rightButton"><img class="aside__img--small" src="images/right.png" alt="right arrow"></button>
         </aside>
         <section>
-            <h1>Welcome to VisitEthiopia</h1>
-            <article>
+            <h1 class="main__header">Welcome to VisitEthiopia</h1>
+            <article class="article">
                 Experience the beauty and culture of Ethiopia with our carefully curated tours and activities. From historical landmarks to outdoor adventures, our knowledgeable guides will take you off the beaten path and show you the hidden gems of the area. Relax
                 in comfortable accommodations and indulge in delicious local cuisine. Let us plan your dream vacation and create memories that will last a lifetime.Welcome to the ultimate destination for your next vacation! Our stunning location offers
                 a variety of activities for visitors of all ages and interests. From outdoor adventures like hiking to cultural experiences like visiting museums and historical landmarks, we have something for everyone. Our charming accommodations range
                 from cozy bed and breakfasts to luxurious resorts, ensuring that you'll have a comfortable stay. With delicious dining options, vibrant nightlife, and a bustling shopping scene, you'll never run out of things to do. Don't miss out on the
                 opportunity to make memories that will last a lifetime and book your trip today!
             </article>
-            <section>
+            <section class="section section--block">
 
-                <h2>Activities To Do</h2>
+                <h2 class="section__header--title">Activities To Do</h2>
 
                 <ul>
                     <li>
-                        <p class="title">OutDoor Activities</p>
-                        <p class="content">Explore the great outdoors with our wide range of outdoor activities. Take a hike through our beautiful forests and mountains, or go kayaking down our crystal clear rivers. For the more adventurous, try your hand at rock climbing
+                        <p class="section__paragraph">OutDoor Activities</p>
+                        <p class="section__paragraph--indent">Explore the great outdoors with our wide range of outdoor activities. Take a hike through our beautiful forests and mountains, or go kayaking down our crystal clear rivers. For the more adventurous, try your hand at rock climbing
                             or white water rafting.
                         </p>
                     </li>
                     <li>
-                        <p class="title">Local Culture</p>
-                        <p class="content">Experience our rich culture and history by visiting our museums, art galleries, and historical landmarks. Take a stroll through our charming towns and villages, where you can find unique shops and restaurants.
+                        <p class="section__paragraph">Local Culture</p>
+                        <p class="section__paragraph--indent">Experience our rich culture and history by visiting our museums, art galleries, and historical landmarks. Take a stroll through our charming towns and villages, where you can find unique shops and restaurants.
                         </p>
                     </li>
                 </ul>
@@ -74,33 +75,33 @@
         </section>
         <hr>
     </main>
-    <footer>
-        <section>
+    <footer class="footer">
+        <section class="section section--grid-medium">
             <section>
-                <h2>
+                <h2 class="section__header--medium">
                     Comments
                 </h2>
-                <form>
+                <form id="form" class="form" method="post">
                     <label for="email">Email: </label>
                     <input type="email" id="email" name="email" placeholder="Email"><br>
                     <label for="subject">Subject: </label>
                     <input type="text" id="subject" name="subject" placeholder="Subject"><br>
                     <label for="comment">Comment: </label>
                     <textarea id="comment" name="comment" cols="40" rows="6" placeholder="Enter your comment"></textarea>
-                    <input type="submit" name="submit" value="submit">
+                    <input id="submit" type="submit" name="submit" value="submit">
                 </form>
             </section>
-            <figure>
-                <img src="images/logo.jpg" alt="Website-logo">
-                <p>
+            <figure class="footer__figure">
+                <img class="footer__img" src="images/logo.jpg" alt="Website-logo">
+                <p class="footer__paragraph">
                     Address:Addis Ababa<br> POBox:1342<br> Email:12abdissa@gmail.com
                 </p>
             </figure>
         </section>
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
 </body>
-<script src="cssjs/homepage.js"></script>
+<script src="js/homepage.js"></script>
 
 </html>

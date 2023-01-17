@@ -6,53 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours</title>
-    <link rel="stylesheet" href="cssjs/tours.css">
+    <link rel="stylesheet" href="css/tours.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/logo.jpg" alt="Website-logo">
-            <h1>Visit Ethiopia</h1>
+    <header class="header">
+        <section class="section section--grid-small">
+            <img class="section__img--main" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="section__header--title">Visit Ethiopia</h1>
         </section>
-        <nav>
-            <button id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img alt="dropdown" src="images/dropdown.jpg"></img></button>
-            <div id="navContainer1">
+        <nav class="nav nav--primary">
+            <button class="nav__button--dropdown" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="nav__img" alt="dropdown" src="images/dropdown.jpg"></img></button>
+            <div class="nav nav--left" id="navContainer1">
                 <a target="_blank" href="festivals.html">Festivals</a>
                 <a target="_blank" href="Booking.html">Bookings</a>
                 <a target="_blank" href="discover.html">Discover</a>
             </div>
-            <div id="navContainer2">
+            <div class="nav nav--right" id="navContainer2">
                 <a target="_blank" href="about.html">About</a>
                 <a target="_blank" href="contact.html">Contact</a>
             </div>
         </nav>
-        <nav id="dropdown">
+        <nav class="nav nav--dropdown" id="dropdown">
             <a target="_blank" href="festivals.html">Festivals</a>
             <a target="_blank" href="Booking.html">Bookings</a>
             <a target="_blank" href="discover.html">Discover</a>
         </nav>
         <hr>
     </header>
-    <main>
-        <h1>Ethiopian Journeys Designed For You</h1>
-        <nav>
-            <button id="educational">Educational tours</button>
-            <button id="piligrimage">Piligrimage</button>
-            <button id="sportAndHiking">Sports and hiking</button>
-            <button id="historical">Historical Tour</button>
-            <button id="sightSeeing">SightSeeing</button>
-            <button id="museumAndHeritage">Museum and Heritage Tour</button>
+    <main class="main">
+        <h1 class="main__header">Ethiopian Journeys Designed For You</h1>
+        <nav class="nav nav--secondary">
+            <button class="nav__button" id="educational">Educational tours</button>
+            <button class="nav__button" id="piligrimage">Piligrimage</button>
+            <button class="nav__button" id="sportAndHiking">Sports and hiking</button>
+            <button class="nav__button" id="historical">Historical Tour</button>
+            <button class="nav__button" id="sightSeeing">SightSeeing</button>
+            <button class="nav__button" id="museumAndHeritage">Museum and Heritage Tour</button>
         </nav>
-        <section id="container">
+        <section class="section section--grid-large" id="container">
 
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
-    <script src="cssjs/tours.js"></script>
+    <script src="js/tours.js"></script>
 </body>
 
 </html>
