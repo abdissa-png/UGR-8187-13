@@ -65,21 +65,12 @@ document.getElementById("sportAndHiking").onclick = () => loadContainer(sportAnd
 document.getElementById("historical").onclick = () => loadContainer(historicalTours);
 document.getElementById("sightSeeing").onclick = () => loadContainer(sightSeeingTours);
 document.getElementById("museumAndHeritage").onclick = () => loadContainer(museumAndHeritageTours);
-document.getElementById("dropdown-button").onclick = () => {
-    dropdown = document.getElementById("dropdown");
-    console.log("clicked", dropdown.style)
-    if (dropdown.style.display == "") {
-        dropdown.style.display = "inline-grid";
-    } else {
-        dropdown.style.display = "";
-    }
-}
 
 function loadContainer(tour) {
     if (tour.length == 0) {
         container.textContent = "";
         text = document.createElement("h1");
-        text.className = "main__header--small";
+        text.className = "display-1 col-12 text-center";
         text.innerHTML = "Sorry,we currently do not have any tours in this category";
         container.appendChild(text);
     } else {
@@ -88,17 +79,17 @@ function loadContainer(tour) {
             image = document.createElement('img');
             image.src = "images/tours/" + object.image;
             image.alt = object.alt;
-            image.className = "section__img--small";
+            image.className = "row h-50";
             division = document.createElement("figure");
-            division.className = "figure";
+            division.className = "col-12 col-sm-5 col-lg-3 card border-secondary";
             miniDivision = document.createElement("section");
-            miniDivision.className = "section section--block"
+            miniDivision.className = "card-body"
             header = document.createElement("h2");
-            header.className = "section__header--medium"
+            header.className = "card-title"
             article = document.createElement("p");
-            article.className = "article"
+            article.className = "card-text"
             button = document.createElement("a");
-            button.className = "section__button"
+            button.className = "btn btn-primary"
             header.innerHTML = object.header;
             article.innerHTML = object.description;
             button.innerHTML = "Explore";

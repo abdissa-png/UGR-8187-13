@@ -144,14 +144,14 @@ let heritage = [{
 let heritageIndex = 0;
 let numOfObjects = 3;
 window.addEventListener("resize", () => {
-    if (window.innerWidth < 930) {
+    if (window.innerWidth < 992) {
         numOfObjects = 1;
         loadScreen();
-    } else if (window.innerWidth <= 1120) {
+    } else if (window.innerWidth <= 1400) {
         numOfObjects = 2;
         loadScreen();
 
-    } else if (window.innerWidth > 1120) {
+    } else if (window.innerWidth > 1400) {
         numOfObjects = 3;
         loadScreen();
     }
@@ -164,31 +164,27 @@ function loadObjects(object, index, containerId) {
     for (let i = index; i < index + numOfObjects; i++) {
         if (object[i % object.length].type == "image") {
             division = document.createElement("figure");
-            //division.className = "figureObject"
-            division.className = "figure__grid"
+            division.className = "card h-100 col-12 col-lg-4 mx-1 align-items-center figure__grid"
             image = document.createElement("img");
-            //image.className = "gridImages"
-            image.className = "figure__img"
+            image.className = "card-image-top w-75 figure__img"
             image.src = "images/discover/" + object[i % object.length].content[0];
             image.alt = object[i % object.length].content[1];
             article = document.createElement("p");
-            article.className = "figure__paragraph"
+            article.className = "card-text figure__paragraph"
             article.innerHTML = object[i % object.length].description;
             division.appendChild(image);
             division.appendChild(article);
             container.appendChild(division);
         } else if (object[i % object.length].type == "audio") {
             division = document.createElement("figure");
-            //division.className = "figureObject"
-            division.className = "figure__grid"
+            division.className = "card h-100 col-12 col-lg-4 mx-1 align-items-center figure__grid"
             audio = document.createElement("audio");
-            //audio.className = "gridAudios";
-            audio.className = "figure__audio"
+            audio.className = "w-100 figure__audio"
             audio.controls = "true";
             audio.src = "audios/" + object[i % object.length].content[0];
             audio.alt = object[i % object.length].content[1];
             article = document.createElement("p");
-            article.className = "figure__paragraph"
+            article.className = "card-text figure__paragraph"
             article.innerHTML = object[i % object.length].description;
             division.appendChild(audio);
             division.appendChild(article);
@@ -228,24 +224,15 @@ function loadScreen() {
     loadObjects(floraAndFauna, floraAndFaunaIndex, "floraAndFaunaImageContainer")
     loadObjects(heritage, heritageIndex, "heritageImageContainer")
 };
-document.getElementById("dropdown-button").onclick = () => {
-    dropdown = document.getElementById("dropdown");
-    console.log("clicked", dropdown.style)
-    if (dropdown.style.display == "") {
-        dropdown.style.display = "inline-grid";
-    } else {
-        dropdown.style.display = "";
-    }
-}
 window.addEventListener("load", () => {
-    if (window.innerWidth < 930) {
+    if (window.innerWidth < 992) {
         numOfObjects = 1;
         loadScreen();
-    } else if (window.innerWidth <= 1120) {
+    } else if (window.innerWidth <= 1400) {
         numOfObjects = 2;
         loadScreen();
 
-    } else if (window.innerWidth > 1120) {
+    } else if (window.innerWidth > 1400) {
         numOfObjects = 3;
         loadScreen();
     }

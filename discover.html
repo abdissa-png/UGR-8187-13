@@ -6,36 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
-    <link rel="stylesheet" href="css/discover.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header">
-        <section class="section section--grid">
-            <img class="section__img" src="images/logo.jpg" alt="Website-logo">
-            <h1 class="section__header">Visit Ethiopia</h1>
+    <header class="sticky-top container-fluid bg-body z-2 opacity-100">
+        <section class="row align-items-center">
+            <img class="col-md-2 col-3" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="col-8 display-1 d-flex justify-content-center align-content-center bg-body-emphasis">Visit Ethiopia</h1>
         </section>
-        <nav class="nav nav--primary">
-            <button class="nav__button" id="dropdown-button" aria-controls="dropdown" aria-expanded="false"><img class="nav__img" alt="dropdown" src="images/dropdown.jpg"></img></button>
-            <div class="nav nav--left" id="navContainer1">
-                <a class="nav__link" target="_blank" href="tours.html">Tours</a>
-                <a class="nav__link" target="_blank" href="festivals.html">Festivals</a>
-                <a class="nav__link" target="_blank" href="Booking.html">Bookings</a>
+        <nav class="row justify-content-between text-xl">
+            <div class="d-inline d-md-none btn-group dropdown col-2 my-2">
+                <button type="button" id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Navigation
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" target="_blank" href="tours.html">Tours</a>
+                    <a class="dropdown-item" target="_blank" href="festivals.html">Festivals</a>
+                    <a class="dropdown-item" target="_blank" href="Booking.html">Bookings</a>
+                </div>
             </div>
-            <div class="nav nav--right" id="navContainer2">
-                <a class="nav__link" target="_blank" href="about.html">About</a>
-                <a class="nav__link" target="_blank" href="contact.html">Contact</a>
+            <div class="col-6 d-none d-md-flex gap-2 my-2" id="navContainer1">
+                <a target="_blank" href="tours.html">Tours</a>
+                <a target="_blank" href="festivals.html">Festivals</a>
+                <a target="_blank" href="Booking.html">Bookings</a>
             </div>
-        </nav>
-        <nav class="nav nav--dropdown" id="dropdown">
-            <a class="nav__link" target="_blank" href="tours.html">Tours</a>
-            <a class="nav__link" target="_blank" href="festivals.html">Festivals</a>
-            <a class="nav__link" target="_blank" href="Booking.html">Bookings</a>
+            <div class="col-2 d-flex flex-row-reverse gap-2 my-2" id="navContainer2">
+                <a class="flex-item" target="_blank" href="about.html">About</a>
+                <a class="flex-item" target="_blank" href="contact.html">Contact</a>
+            </div>
         </nav>
         <hr>
     </header>
-    <main class="main">
-        <nav class="nav nav--secondary">
+
+    <main class="row no-gutters justify-content-center">
+        <nav class="col-11 col-lg-2 border border-1 border-dark">
             <ul>
                 <li><a href="#cultureHeader">Culture</a></li>
                 <li><a href="#thingsToDoHeader">Discover Things To Do</a></li>
@@ -48,14 +53,14 @@
                 </li>
             </ul>
         </nav>
-        <section>
+        <section class="col-11 col-lg-9 border border-1 border-dark">
             <section class="section section--grid-large">
-                <h1 class="section__header--main" id="cultureHeader">Culture</h1>
+                <h1 class="display-4" class="section__header--main" id="cultureHeader">Culture</h1>
                 <ul>
                     <!--li.container-->
-                    <li class="list">
-                        <h2 class="section__header--sub">History</h2>
-                        <p class="list__paragraph">
+                    <li class="row">
+                        <h2 class="display-5">History</h2>
+                        <p class="text-body-emphasis">
                             Ethiopia is a land of contrasts and diversity, with a rich history and culture dating back thousands of years. Known as the "cradle of civilization," Ethiopia is home to some of the earliest known human remains and evidence of human civilization. The
                             Axumite Empire, which emerged around the 1st century AD, was one of the most powerful empires in the ancient world and controlled much of the Horn of Africa. The empire was known for its impressive engineering feats, including
                             the construction of massive stone stelae, or obelisks. In the 14th century, the Solomonic dynasty came to power and established a centralized government, which lasted for over 700 years. During this period, Ethiopia became
@@ -63,89 +68,89 @@
                             ethnic groups and over 200 dialects spoken. The country's rich culture is reflected in its traditional art, music, and cuisine, which is a blend of African, Arabian, and Indian influences.
                         </p>
                     </li>
-                    <li class="list">
-                        <h2 class="section__header--sub">Arts and Music</h2>
+                    <li class="row">
+                        <h2 class="display-5">Arts and Music</h2>
                         <!--slidingContainer-->
-                        <section class="section section--grid-sub" id="artAndMusic">
+                        <section class="row align-items-center" id="artAndMusic">
                             <!--for all btns section btns-->
-                            <button class="section__button" id="artAndMusicLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="artAndMusicImageContainer">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="artAndMusicLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="artAndMusicImageContainer">
                                 <!--imageContainer-->
                             </figure>
-                            <button class="section__button" id="artAndMusicRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="artAndMusicRightButton"><img src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                     <li class="list">
-                        <h2 class="section__header--sub">Peoples</h2>
-                        <section class="section section--grid-sub" id="peoples">
-                            <button class="section__button" id="peoplesLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="peoplesImageContainer">
+                        <h2 class="display-5">Peoples</h2>
+                        <section class="row align-items-center" id="peoples">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="peoplesLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="peoplesImageContainer">
                             </figure>
-                            <button class="section__button" id="peoplesRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                </ul>
-            </section>
-            <section style="border: 2px solid black;">
-                <h1 class="section__header--main" id="thingsToDoHeader">Things To Do</h1>
-                <ul>
-                    <li class="list">
-                        <h2 class="section__header--sub">Cultural Experiences</h2>
-                        <section class="section section--grid-sub" id="culture">
-                            <button class="section__button" id="cultureLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="cultureImageContainer">
-                            </figure>
-                            <button class="section__button" id="cultureRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                    <li class="list">
-                        <h2 class="section__header--sub">Nature Experiences</h2>
-                        <section class="section section--grid-sub" id="nature">
-                            <button class="section__button" id="natureLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="natureImageContainer">
-                            </figure>
-                            <button class="section__button" id="natureRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
-                        </section>
-                    </li>
-                    <li class="list">
-                        <h2 class="section__header--sub">Outdoor and Adventure</h2>
-                        <section class="section section--grid-sub" id="outdoor">
-                            <button class="section__button" id="outdoorLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="outdoorImageContainer">
-                            </figure>
-                            <button class="section__button" id="outdoorRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="peoplesRightButton"><img src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                 </ul>
             </section>
-            <section style="border: 2px solid black;">
-                <h1 class="section__header--main" id="attractionsHeader">Attractions</h1>
+            <section>
+                <h1 class="display-4" class="section__header--main" id="thingsToDoHeader">Things To Do</h1>
                 <ul>
                     <li class="list">
-                        <h2 class="section__header--sub" id="eventsHeader">Events</h2>
-                        <section class="section section--grid-sub" id="events">
-                            <button class="section__button" id="eventsLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="eventsImageContainer">
+                        <h2 class="display-5">Cultural Experiences</h2>
+                        <section class="row align-items-center" id="culture">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="cultureLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="cultureImageContainer">
                             </figure>
-                            <button class="section__button" id="eventsRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="cultureRightButton"><img src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                     <li class="list">
-                        <h2 class="section__header--sub" id="floraAndFaunaHeader">Flora and Fauna</h2>
-                        <section class="section section--grid-sub" id="floraAndFauna">
-                            <button class="section__button" id="floraAndFaunaLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="floraAndFaunaImageContainer">
+                        <h2 class="display-5">Nature Experiences</h2>
+                        <section class="row align-items-center" id="nature">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="natureLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="natureImageContainer">
                             </figure>
-                            <button class="section__button" id="floraAndFaunaRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="natureRightButton"><img src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                     <li class="list">
-                        <h2 class="section__header--sub" id="heritageHeader">World Heritage Sites</h2>
-                        <section class="section section--grid-sub" id="heritage">
-                            <button class="section__button" id="heritageLeftButton"><img class="section__img--small" src="images/left.png" alt="left arrow"></button>
-                            <figure class="figure" id="heritageImageContainer">
+                        <h2 class="display-5">Outdoor and Adventure</h2>
+                        <section class="row align-items-center" id="outdoor">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="outdoorLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="outdoorImageContainer">
                             </figure>
-                            <button class="section__button" id="heritageRightButton"><img class="section__img--small" src="images/right.png" alt="right arrow"></button>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="outdoorRightButton"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1 class="display-4" class="section__header--main" id="attractionsHeader">Attractions</h1>
+                <ul>
+                    <li class="list">
+                        <h2 class="display-5" id="eventsHeader">Events</h2>
+                        <section class="row align-items-center" id="events">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="eventsLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="eventsImageContainer">
+                            </figure>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="eventsRightButton"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="list">
+                        <h2 class="display-5" id="floraAndFaunaHeader">Flora and Fauna</h2>
+                        <section class="row align-items-center" id="floraAndFauna">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="floraAndFaunaLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch justify-content-center" id="floraAndFaunaImageContainer">
+                            </figure>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="floraAndFaunaRightButton"><img src="images/right.png" alt="right arrow"></button>
+                        </section>
+                    </li>
+                    <li class="list">
+                        <h2 class="display-5" id="heritageHeader">World Heritage Sites</h2>
+                        <section class="row align-items-center" id="heritage">
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="heritageLeftButton"><img src="images/left.png" alt="left arrow"></button>
+                            <figure class="col-9 d-flex align-items-stretch  justify-content-center" id="heritageImageContainer">
+                            </figure>
+                            <button class="col-1 h-50 btn btn-info d-flex align-content-center justify-content-center align-items-center" id="heritageRightButton"><img src="images/right.png" alt="right arrow"></button>
                         </section>
                     </li>
                 </ul>
@@ -154,10 +159,13 @@
 
 
     </main>
-    <footer class="footer">
+    <footer>
         <hr>
-        <p class="footer__paragraph">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+        <p class="text-center text-white bg-dark">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </body>
 <script src="js/discover.js"></script>
 
