@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="sticky-top container-fluid bg-body z-2 opacity-100">
+        <section class="row align-items-center">
+            <img class="col-md-2 col-3" src="images/logo.jpg" alt="Website-logo">
+            <h1 class="col-8 display-1 d-flex justify-content-center align-content-center bg-body-emphasis">Visit Ethiopia</h1>
+        </section>
+        <nav class="row justify-content-between text-xl">
+            <div class="d-inline d-md-none btn-group dropdown col-2 my-2">
+                <button type="button" id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Navigation
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" target="_blank" href="tours.html">Tours</a>
+                    <a class="dropdown-item" target="_blank" href="festivals.html">Festivals</a>
+                    <a class="dropdown-item" target="_blank" href="discover.html">Discover</a>
+                </div>
+            </div>
+            <div class="col-6 d-none d-md-flex gap-2 my-2" id="navContainer1">
+                <a target="_blank" href="tours.html">Tours</a>
+                <a target="_blank" href="festivals.html">Festivals</a>
+                <a target="_blank" href="discover.html">Discover</a>
+            </div>
+            <div class="col-2 d-flex flex-row-reverse gap-2 my-2" id="navContainer2">
+                <a class="flex-item" target="_blank" href="about.html">About</a>
+                <a class="flex-item" target="_blank" href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <nav class="row gap-2 container-fluid gap-lg-0 justify-content-lg-evenly justify-content-center align-items-center">
+            <button class="text-truncate btn btn-primary col-5 col-lg-2 my-lg-2 ms-lg-1" id="popular">Popular Destinations</button>
+            <button class="text-truncate btn btn-primary col-5 col-lg-2 my-lg-2 ms-lg-1" id="best">Best Deals</button>
+            <button class="text-truncate btn btn-primary col-5 col-lg-2 my-lg-2 ms-lg-1" id="discounted">Discounted Tours</button>
+            <button class="text-truncate btn btn-primary col-5 col-lg-2 my-lg-2 ms-lg-1" id="new">New Destinations</button>
+        </nav>
+        <h1 class="display-1 text-center">Explore Destinations</h1>
+        <section class="row px-1 align-items-center justify-content-center" id="slidingObjects">
+            <button class="col-1 btn btn-info d-flex align-content-center justify-content-center" id="leftButton"><img src="images/left.png" alt="left arrow"></button>
+            <figure class="col-9 d-grid align-items-center justify-content-center" id="objectContainer">
+                <figure class="row justify-content-center" id="imageContainer">
+                    <img class="w-75 w-lg-50" id="imageObject">
+                </figure>
+                <section class="row no-gutters align-items-center">
+                    <table class="table-bordered table-active col-lg-6 w-lg-100 h-lg-25">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Location
+                                </th>
+                                <th scope="col">
+                                    Date
+                                </th>
+                                <th scope="col">
+                                    Tour Guide
+                                </th>
+                                <th scope="col">
+                                    Cost
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="location">
+
+                                </td>
+                                <td id="date">
+
+                                </td>
+                                <td id="tourGuide">
+
+                                </td>
+                                <td id="cost">
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <section class="col-lg-6">
+                        <h1 class="text-center display-6" id="header">
+
+                        </h1>
+                        <p class="text-center" id="description">
+
+                        </p>
+                    </section>
+                </section>
+            </figure>
+            <button class="col-1 btn btn-info d-flex align-content-center justify-content-center" id="rightButton"><img src="images/right.png" alt="right arrow"></button>
+        </section>
+        <hr>
+        <section class="container-fluid" id="formContainer">
+            <h1 class="display-3 text-center">Book A Tour</h1>
+            <form class="form row justify-content-center align-content-center" id="form" method="post">
+                <div class="row no-gutters justify-content-center">
+                    <section class="col-sm-6 col-12 justify-content-center align-items-center bg-info ">
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="firstname ">First Name:</label>
+                            <input id="firstname " name="firstname " type="text " placeholder="Enter First Name " required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="lastname ">Last Name:</label>
+                            <input id="lastname " name="lastname " type="text " placeholder="Enter Last Name " required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="Email ">Email:</label>
+                            <input id="Email " name="Email " type="text " placeholder="Enter Your Email " required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 d-block" for="tour ">Tour:</label><br>
+                            <select class="form-control " id="tour " name="tour " placeholder="Choose The Tour " required>
+                                <option value="tour-1 ">tour-1</option>
+                                <option value="tour-2 ">tour-2</option>
+                                <option value="tour-3 ">tour-3</option>
+                            </select><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="inputDate ">Choose Date:</label>
+                            <input id="inputDate " name="inputDate " type="date" required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 d-block" for="package">Package:</label><br>
+                            <select class="form-control " id="package " name="package " placeholder="Choose The Package " required>
+                                <option value="package-1 ">package-1</option>
+                                <option value="package-2 ">package-2</option>
+                                <option value="package-3 ">package-3</option>
+                            </select><br>
+                        </div>
+                    </section>
+                    <section class="col-sm-6 col-12 align-items-center bg-info-subtle " id="creditCardForm ">
+                        <h2 class="display-5 text-center ">Credit Card Information</h2><br>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="creditnum ">Credit Card Number:</label>
+                            <input id="creditnum " name="creditnum " placeholder="Card Number " required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="expirydate ">Expiry Date:</label>
+                            <input id="expirydate " name="expirydate " placeholder="MM/YY " required><br>
+                        </div>
+                        <div class="form-group ">
+                            <label class="text-dark mx-1 my-3 d-block" for="cvc ">CVC:</label>
+                            <input id="cvc " name="cvc " placeholder="CVC " required>
+                        </div>
+
+                    </section>
+                </div>
+                <input class="btn btn-primary my-2" id="submit" value="Book Now" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p class="text-center text-white bg-dark">Copyright 2022 &COPY; Ethiopia. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js " integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js " integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin=" anonymous "></script>
+</body>
+<script src="js/booking.js "></script>
+
+</html>
